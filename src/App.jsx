@@ -1,19 +1,19 @@
-
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './pages/home'
+import Banner2 from "./components/Banner2/Banner2";
+import Banner3 from "./components/Banner3/Banner3";
+import Banners from "./components/Banners/Banners";
+import Header from "./components/Header/Header";
+import HrBanner from "./components/HrBanner/HrBanner";
 
 const App = () => {
   return (
     <>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/home" element={<Home/>} />
-      </Routes>
-    </BrowserRouter>
-      
+      <Header />
+      <HrBanner />
+      <Banners />
+      <Banner2 />
+      <Banner3 />
     </>
-  )
-}
+  );
+};
 
-export default App
-
+export default App;
